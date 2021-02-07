@@ -1,6 +1,6 @@
 import React from 'react';
 import {Image, View, StyleSheet} from 'react-native';
-import {arrowIcon, downArrow, dot, search} from '../../../assets/icons';
+import {arrowIcon, downArrow, dot, search, radio,radioActive} from '../../../assets/icons';
 import {AppStyle, wp, fp, hp} from '../../style';
 
 const {color} = AppStyle;
@@ -15,6 +15,10 @@ const Icon = ({name}) => {
 					? dot
 					: name === 'search'
 					? search
+					: name === 'radio'
+					? radio
+					: name ==='radioActive' 
+					? radioActive
 					: downArrow
 			}
 			style={name === 'dot' ? styles.dotStyle : styles.iconStyle}

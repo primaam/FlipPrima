@@ -17,14 +17,14 @@ import {
 } from 'react-native';
 import {Provider} from 'react-redux'
 import store from './src/shared/store/store'
-import TransactionList from './src/features/transactionList/container_transactionList'
+import AppStack from './src/shared/navigation/AppStack';
 
 const App: () => React$Node = () => {
   return (
     <Provider store={store}>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={{height:'100%',backgroundColor:'#f2f2f2'}}>
-         <TransactionList/>
+         <AppStack/>
       </SafeAreaView>
     </Provider>
   );
