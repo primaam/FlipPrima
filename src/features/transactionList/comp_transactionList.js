@@ -36,7 +36,7 @@ export class TransactionList extends React.Component {
 	searchFilterFunction = (text) => {
 		const newData = this.props.data.filter((item) => {
 			const itemData = `${item.beneficiary_bank.toUpperCase()}   
-   			 ${item.beneficiary_name.toUpperCase()}`;
+   			 ${item.beneficiary_name.toUpperCase()} ${item.amount}`;
 
 			const textData = text.toUpperCase();
 
